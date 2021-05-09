@@ -1,0 +1,18 @@
+<!--about/about.wxml-->
+<!-- 1.小程序的数据绑定 -->
+<view>hello {{name}}</view>
+<view>我的年龄:{{age}}</view>
+
+<!-- 2.列表展示 wx:for-->
+<!-- 
+<view> {{students[0].name}} </view>
+<view> {{students[1].name}} </view>
+<view> {{students[2].name}} </view>
+<view> {{students[3].name}} </view> 
+-->
+<view wx:for="{{students}}">{{item.id}}-{{item.name}}-{{item.age}}</view>
+
+<!-- 3.事件监听改变data -->
+<view>当前计数: {{counter}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button>
+<button size="mini" bindtap="handleSubtraction">-</button>

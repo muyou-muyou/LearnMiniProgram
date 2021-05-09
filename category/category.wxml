@@ -1,0 +1,23 @@
+<!--category/category.wxml-->
+<text>category/category.wxml</text>
+<view>这是分类页面</view>
+
+<view>
+  <view>a</view>
+  <view>b</view>
+  <view>c</view>
+  <view>d</view>
+</view>
+<view>{{message}}</view>
+<button size='mini' bindtap='handleBtnClick'>按钮</button>
+
+<!-- 2.获取用户信息的方式 -->
+<button size='mini' open-type='getUserInfo' bindgetuserinfo="handleGetUserInfo">获取授权</button>
+
+<!-- 3.获取用户信息的方式-仅仅是一种展示 -->
+<open-data type='userNickName'></open-data>
+<open-data type='userAvatarUrl'></open-data>
+
+<view wx:for="{{list}}">{{item.list}}</view>
+
+<view bindtap='handleViewClick'>点击有惊喜</view>
